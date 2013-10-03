@@ -1,0 +1,5 @@
+cd HKCU:\"Software\Microsoft\Windows\CurrentVersion\Internet Settings"
+
+set-itemproperty . ProxyEnable 1
+set-itemproperty . ProxyServer proxy:80
+set-itemproperty . ProxyOverride "<local>10.*;"
