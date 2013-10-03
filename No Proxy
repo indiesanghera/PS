@@ -1,0 +1,3 @@
+cd HKCU:\"Software\Microsoft\Windows\CurrentVersion\Internet Settings"
+
+set-itemproperty . ProxyEnable 0
