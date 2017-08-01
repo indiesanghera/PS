@@ -1,2 +1,2 @@
 #Ping with TimeStamp
-ping -t 8.8.8.8|Foreach{"{0} - {1}" -f (Get-Date),$_}
+ping -t 8.8.8.8|ForEach|{"{0} - {1}" -f (Get-Date),$_}
