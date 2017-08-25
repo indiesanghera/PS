@@ -1,6 +1,6 @@
-$ISErrorLogPreference = "c:\errors.txt"
+$ErrorLogPreference = "c:\errors.txt"
 
-Function Get-ISSystemInfo {
+Function Get-SystemInfo {
     <#
     .SYNOPSIS
     Queries Local Computer information
@@ -13,17 +13,17 @@ Function Get-ISSystemInfo {
     .PARAMETER ShowProgress
     Displays a progress bar showing current operation and percent complete. (does not work when computernames are piped into the command)
     .EXAMPLE
-    Get-ISSystemInfo -ComputerName WHATEVER
+    Get-SystemInfo -ComputerName WHATEVER
     This will query information from the computer WHATEVER
     .EXAMPLE
-    Get-ISSystemInfo -ComputerName WHATEVER | Format-Table *
+    Get-SystemInfo -ComputerName WHATEVER | Format-Table *
     This will query information from the computer WHATEVER and will display the information in a Table. 
     .EXAMPLE
-    Get-ISSystemInfo -ComputerName localhost,localhost,localhost,localhost,localhost,localhost,localhost,localhost -ShowProgress
+    Get-SystemInfo -ComputerName localhost,localhost,localhost,localhost,localhost,localhost,localhost,localhost -ShowProgress
     This will display a progress bar
     .LINK
     http://www.google.com
-    #if you run help Get-ISSysteminfo -Online it will open the above link
+    #if you run help Get-Systeminfo -Online it will open the above link
     #>
     
     #[CmdletBinding()] - This Enable Advanced Features i.e Mandatory Parameters
@@ -97,11 +97,11 @@ Function Get-ISSystemInfo {
 
 
 #Examples
-#Get-ISSystemInfo -IPAddress 127.0.0.1
-#Get-ISSystemInfo -ComputerName localhost,localhost,localhost,localhost
+#Get-SystemInfo -IPAddress 127.0.0.1
+#Get-SystemInfo -ComputerName localhost,localhost,localhost,localhost
 #'localhost','localhost','localhost' | Get-ISSystemInfo
-Get-ISSystemInfo -ComputerName localhost,localhost | Format-Table *
-#Get-ISSystemInfo -ComputerName localhost,localhost -Verbose
+Get-SystemInfo -ComputerName localhost,localhost | Format-Table *
+#Get-SystemInfo -ComputerName localhost,localhost -Verbose
 
 
 
