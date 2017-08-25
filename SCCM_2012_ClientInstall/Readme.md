@@ -4,9 +4,11 @@
 ' http://blog.configmgrftw.com
 
 
-Edit XML
+## Edit XML
+need to update Servername, Site Code etc
 
-Group Policy  
+
+## Group Policy  
 Computer Configuration  
 Windows Settings  
 Scripts  
