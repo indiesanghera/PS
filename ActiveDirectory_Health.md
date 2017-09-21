@@ -6,7 +6,7 @@
 
 ```repadmin /replsummary```
 
-#### Synchronizes a specified domain controller with all replication
+### Synchronizes a specified domain controller with all replication
 
 ```repadmin /syncall /e```
 
